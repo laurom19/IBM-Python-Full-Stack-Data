@@ -1,0 +1,22 @@
+1. La "Temperatura" de los Precios (Eje de Color)
+La barra de la derecha es tu leyenda. El azul oscuro representa los precios más altos (cerca de 25,000+), mientras que el rojo oscuro representa los más bajos (alrededor de 10,000 o menos).
+
+Puntos Calientes (High-end): Claramente, la combinación de RWD (Tracción Trasera) con carrocerías Convertible y Hardtop son las más costosas del dataset ($26,563 y $24,203).
+
+Puntos Fríos (Budget): La tracción FWD (Tracción Delantera) es consistentemente la más económica, especialmente en modelos Hardtop, Hatchback y Sedan.
+
+. Análisis por Tracción (Filas)
+RWD (Rear-Wheel Drive): Es el segmento de lujo. No importa la carrocería, casi siempre es más caro que las otras tracciones.
+
+FWD (Front-Wheel Drive): Es el segmento masivo o "económico". Los precios se mantienen estables y bajos entre los $8,000 y $11,000.
+
+4WD (Four-Wheel Drive): Es un segmento intermedio. Curiosamente, en tu gráfico se ve que no hay datos para convertibles o hardtops con 4x4 (los espacios en blanco que mencionamos antes), lo que indica que es una tracción más enfocada a la utilidad (Sedan/Wagon).
+
+3. Los "Insights" (Lo que le dirías a un jefe)
+Si tuvieras que resumir esto en una reunión, podrías decir:
+
+"La tracción es el factor determinante en el precio. Mientras que los vehículos de tracción delantera (FWD) compiten en el rango de los $10,000, cambiar a tracción trasera (RWD) duplica el valor promedio en modelos deportivos como convertibles."
+
+"The heatmap reveals a price gap between FWD and RWD vehicles across all body styles." (El mapa de calor revela una brecha de precios entre vehículos FWD y RWD en todos los estilos de carrocería).
+
+"There is a strong positive correlation between RWD drive-wheels and higher price points." (Hay una fuerte correlación positiva entre la tracción trasera y puntos de precio más altos).

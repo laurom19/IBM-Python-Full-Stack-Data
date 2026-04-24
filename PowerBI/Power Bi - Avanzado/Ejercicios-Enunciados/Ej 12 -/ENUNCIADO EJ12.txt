@@ -1,0 +1,21 @@
+EJERCICIO 12
+En el fichero MODELO DATOS GASTOS COPO DE NIEVE, se registran los gastos de empleados de una empresa y se dispone de las siguientes 4 tablas: 
+T_GASTOS: tabla en la que se registran todos los gastos de los empleados de la empresa. Es la tabla que queremos analizar para conocer los datos que se guardan en ella.
+T_EMPLEADOS: tabla en la que están los datos de los empleados de la empresa con sus datos personales y el departamento al que pertenece cada uno.
+T_DPTOS: tabla en la que están los datos de cada departamento de los empleados. Los campos coincidentes de esta tabla con la tabla T_EMPLEADOS son: COD DPTO y JORNADA.
+T_CONCEPTOS: tabla en la que se registra el detalle de los diferentes conceptos que se les asignan a los gastos.
+Importar las cuatro tablas a un fichero nuevo de Power BI e ir directamente a Power Query.
+Combinar las tablas T_EMPLEADOS y T_DPTOS a través de sus dos columnas coincidentes.
+Mostrar en la tabla T_EMPLEADOS los campos: NOMBRE DPTO, PLAZO PAGO Y EXTRA de la tabla T_DPTOS.
+Deshabilitar la carga de la tabla T_DPTOS.
+Cargar las otras tres tablas en Power BI y establecer las relaciones entre las 3 tablas cargadas:
+T_GASTOS – T_CONCEPTOS.
+T_GASTOS – T_EMPLEADOS.
+Ir a la vista informes e insertar una matriz que muestre:
+FILA: Cod Empleado (de la tabla T_EMPLEADOS).
+COLUMNA: Concepto (de la tabla T_CONCEPTOS).
+VALORES: Recuento de Num Gasto (de la tabla T_GASTOS).
+Insertar una segmentación y agregarla el campo NOMBRE DPTO de la tabla T_EMPLEADOS.
+Filtrar por el departamento: COMERCIAL.
+
+

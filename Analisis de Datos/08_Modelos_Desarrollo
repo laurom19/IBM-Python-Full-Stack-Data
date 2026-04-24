@@ -1,0 +1,59 @@
+import pandas as pd
+from scipy import stats
+import seaborn as sns
+import matplotlib.pyplot as plt
+from sklearn.linear_model import LinearRegression
+
+
+df = pd.read_csv('automoviles_limpios_dummies.csv')
+
+print(df.head(5))
+print(df.columns)
+# --- REGRESION LINEAL SIMPLE RLS ---
+print('\n --- REGRESION LINEAL SIMPLE RLS---')
+# 1. Creamos el objeto del modelo
+lm = LinearRegression()
+
+# 2.Defino mis variables
+X=df [['CONS_CIUDAD_L100']] #variable independiente# <--- Doble corchete: esto lo hace 2D, al ponerlo en un solo corchete da error porque dice es una simple lista o y espera enviar una serie
+Y=df['PRECIO'] #variable dependiente (lo que quiero sacar o tambien conocido como objetivo)
+
+# 3. Entrenamos el modelo fit
+lm.fit(X, Y)
+
+# 4. ¡Predecimos! Y-hat o y-sombrero e suna estimacion, no una realidad absoluta
+Yhat = lm.predict(X)
+
+# El valor de 'b' (pendiente)
+print("Pendiente (b): ", lm.coef_ ,"\n")
+
+# El valor de 'a' (intersección)
+print("Intersección (a): ", lm.intercept_ ,"\n")
+
+# Esto te va a mostrar los primeros 5 precios reales vs los 5 que predijo el modelo
+print("Precios Reales:", Y[0:5].values)
+print("Predicciones (Yhat):", Yhat[0:5])
+
+"""
+Análisis de tus resultados con consumo_ciudad_1litros100km:
+Pendiente Positiva: Es lógica. Un auto que consume 12L/100km (como una camioneta o un alta gama) es más costoso que uno que consume 6L/100km (un city car).
+
+Precisión Inicial: Vimos que en el primer auto fallaste solo por $354. Eso es un error del 2%, lo cual es excelente para un modelo de una sola variable.
+"""
+
+
+# --- REGRESION LINEAL MULTIPLE MLR ---
+print('\n --- REGRESION LINEAL MULTIPLE MLR--- ')
+# 1. Definimos el set de predictores (Z)
+Z = df[['CABALLOS_FUERZA', 'PESO_VACIO', 'TAMANO_MOTOR', 'CONS_AUTOPISTA_L100']]
+
+# 2. Entrenamos el modelo con las 4 variables
+lm.fit(Z, df['PRECIO'])
+
+# 3. Obtenemos las nuevas predicciones
+Y_hat_multiple = lm.predict(Z)
+
+print("Intersección (a): ", lm.intercept_)
+print("Coeficientes (b1, b2, b3, b4): ", lm.coef_)
+
+

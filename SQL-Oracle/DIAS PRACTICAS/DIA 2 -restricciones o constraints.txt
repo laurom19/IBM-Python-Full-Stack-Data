@@ -1,0 +1,57 @@
+restricciones o constraints
+
+Dentro de cualquier negocio, los datos a menudo deben adherirse a ciertas restricciones o reglas.
+En un modelo de datos relacional, la integridad de los datos se puede lograr utilizando reglas de integridad o restricciones.
+Las siguientes seis restricciones están definidas en un modelo de base de datos relacional.
+Restricción de Integridad de Entidad, Restricción de Integridad Referencial, Restricción de Integridad Semántica,
+Restricción de Dominio, Restricción de Nulo y Restricción de Comprobación.
+Discutiremos cada una de estas restricciones del modelo relacional.
+
+
+La clave primaria es un valor único que identifica cada tupla o fila en una tabla: Esta es la Restricción de Integridad de Entidad.
+También se utilizan los términos Restricción de Clave Primaria o Restricción Única: Esta restricción previene valores duplicados en una tabla.
+La Restricción de Integridad de Entidad: establece que ningún atributo que participe en la clave primaria de una relación puede aceptar valores nulos.
+El valor nulo o también conocido como null indica que el valor es desconocido (a noon).
+En la Restricción de Integridad de Entidada indica que la clave primaria no puede tener un valor desconocido.
+Por ejemplo, en la relación Autor, Autor ID es la clave primaria.
+La clave primaria identifica cada tupla en la relación.
+El Autor ID A1 se refiere al autor Eduardo Galeano de Uruguay.
+  |AUTOR ID| NOMBRE  | APELLIDO | PAIS |
+    A1     | EDUARDO | GALEANO  | URU  |
+    A2     |   J     | TOLKIEN  | AFR  |
+
+
+Información Adicional
+Esta sección ofrece una explicación más detallada sobre conceptos que no se abordaron en los videos de este módulo.
+ 
+
+Claves Primarias
+Si un esquema de relación tiene más de una clave, entonces cada clave se llama clave candidata. Una de las claves candidatas se designa como la clave primaria, y las demás se llaman claves secundarias.
+
+En una base de datos relacional práctica, cada esquema de relación debe tener una clave primaria.
+
+Reglas para claves primarias:
+El valor de la clave primaria debe ser único para cada instancia de la entidad.
+
+No puede haber valores faltantes (es decir, No Nulo) para las claves primarias. Si la clave primaria está compuesta por múltiples atributos, cada uno de esos atributos debe tener un valor para cada instancia.
+La clave primaria es inmutable. Es decir, una vez creada, el valor de la clave primaria no puede ser cambiado.
+Si la clave primaria consiste en múltiples atributos, ninguno de estos valores puede ser actualizado.
+ 
+Integridad Semántica
+La integridad semántica asegura que los datos ingresados en una fila reflejen un valor permitido para esa fila. El valor debe estar dentro del dominio, o conjunto permitido de valores, para esa columna. Por ejemplo, la columna de cantidad de la tabla de artículos solo permite números. Si se puede ingresar un valor fuera del dominio en una columna, la integridad semántica de los datos se ve violada.
+
+
+Restricciones Semánticas
+Las restricciones semánticas son restricciones que no se pueden expresar directamente en los esquemas del modelo de datos. Las restricciones semánticas también se llaman reglas basadas en la aplicación o reglas de negocio. Son reglas adicionales especificadas por los usuarios o administradores de bases de datos. Por ejemplo, una clase puede tener un máximo de 30 estudiantes; el salario de un empleado no puede exceder el salario del gerente del empleado.
+
+Las restricciones de dominio especifican que dentro de una tupla, el valor de cada atributo debe ser un elemento del dominio de ese atributo. Los tipos de datos asociados con los dominios incluyen:
+
+Números enteros (entero corto, entero, entero largo) EN INGLES SE LLAMA Integers O INT
+Números reales (números de punto flotante y de doble precisión) - FLOAT O DOUBLE
+Caracteres - CHAR 
+Booleanos -BOOL
+Cadenas de longitud fija y cadenas de longitud variable -  VARCHAR(20) INDICA QUE SOLO VA A CONTENER 20 LETRAS
+Fecha, hora, marca de tiempo - DATE O DATETIME
+Dinero - MONEY
+Otros tipos de datos especiales
+Otros posibles valores de dominio pueden ser un sub-rango de valores de un tipo de dato o como un tipo de dato enumerado en el que los valores están listados explícitamente.

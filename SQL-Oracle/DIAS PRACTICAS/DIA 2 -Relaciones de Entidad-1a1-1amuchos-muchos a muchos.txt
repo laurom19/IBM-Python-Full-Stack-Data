@@ -1,0 +1,5 @@
+En una entidad Relación(ER) existen una manera de representar vamos aponer la relación entre libro y autores. 
+Estas se dibujan dentro de un rectagulo y intervienen y esta entre medio de las dos relaciones es un triangulo que serian el escrito por van dentro de un rombo.
+relación de uno a uno: se unen con el autor(dentro de un rectángulo) a escrito por(que esta dentro de un rectagulo) y de escritor por sale una linea a un libro(dentro de un rectangulo). Esto nos indica que un author a escrito solamente un libro.
+Relación de muchos a muchos: cuando un autor tenga muchos libros, lo que va a cambiar es que en la linea que une el escrito por con el libro se le agrega una pata de gallo o también conocida en argentina como un símbolo mas, que significa que un autor ha escrito muchos libros.
+Relacion de muchos a muchos: en el caso que muchos autores escriban muchos libros se haría dos patas de gallo o símbolos mas en ambas relaciones (rectangulos) esto se conoce como una 

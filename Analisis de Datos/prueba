@@ -1,0 +1,3 @@
+import oracledb
+import pandas as pd
+print("✅ Entorno configurado correctamente")

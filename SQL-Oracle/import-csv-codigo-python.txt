@@ -1,0 +1,20 @@
+import pandas as pd
+import cx_Oracle
+
+# 1. Cargamos el CSV con Pandas
+df = pd.read_csv('nuevos_activos.csv')
+
+# 2. Conexión a Oracle (Reemplaza con tus datos de ayer)
+conn = cx_Oracle.connect("SYSTEM/admin@localhost:1521/xe")
+cursor = conn.cursor()
+
+# 3. Insertar fila por fila con lógica explicada
+for index, row in df.iterrows():
+    sql = """INSERT INTO ACTIVOS_IT (ID_ACTIVO, NOMBRE_EQUIPO, TIPO_EQUIPO, ESTADO, ID_TECNICO_ASIGNADO) 
+             VALUES (:1, :2, :3, :4, :5)"""
+    cursor.execute(sql, (row['ID_ACTIVO'], row['NOMBRE_EQUIPO'], row['TIPO_EQUIPO'], row['ESTADO'], row['ID_TECNICO_ASIGNADO']))
+
+# 4. COMMIT OBLIGATORIO (Como aprendimos ayer)
+conn.commit()
+cursor.close()
+conn.close()

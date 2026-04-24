@@ -1,0 +1,5 @@
+df.columns = [col.upper() for col in df.columns]: Normalización de cabeceras. CONVERTI CON EL UPPER A MAYUSCULAS todo el nombre de las columnas
+
+df['COLUMNA'].mean(): Cálculo estadístico básico. calculo el promedio de la columna deseada, en mi caso fue salario df['SALARY'].mean()
+
+df.head(n): Visualización controlada. visualizo por defecto las 5 primeras filas de mi tabla, si deseo mas en la n coloco un numero mayor

@@ -1,0 +1,9 @@
+Mapeo de entidades de tablas.
+El diseño de dba relacionales se comienza con un Entidad Relación (ER) o DER (diagrama de entidad de relacion) y posteriormente se asgna el DER a las tablas de la base de datos.
+En el siguiente ejemplo pondremos el caso del libro.
+El rectángulo que hace referencia a la entidad y dentro contiene la palabra Libro, este va a ser nuestra TABLA.
+Los círculos que contienen sus atributos como por ejemplo año del Libro, Nombre, Precio, Paginas van a se nuestras COLUMNAS. 
+
+Durante el mapeo, la entidad que se convierte en una TABLA va a estar compuesta por sus ATRIBUTOS ( Nombre, Precio, Pagina) que eran sus columnas, a medida que vamos insertando información a esta tabla por ej: nombre: harry potter y la piedra filosofal, precio: 10000 pesos, paginas:800, etc. Una vez completas sus columnas, se completaría el formato de la tabla. 
+
+ 

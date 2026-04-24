@@ -1,0 +1,24 @@
+Aquí tenés la interpretación técnica que deberías anotar:
+
+1. El veredicto: No hay diferencias significativas
+Con un P-value de 0.5319, estamos muy por encima del umbral estándar de 0.05.
+
+Interpretación: No tenés evidencia suficiente para decir que los precios de Honda, Subaru y Mitsubishi son distintos entre sí.
+
+En criollo: Para los datos que analizaste, da lo mismo (en términos de precio promedio) comprar cualquiera de estas tres marcas. Sus promedios están tan cerca que cualquier diferencia se considera "ruido" estadístico.
+
+2. El Valor F (0.64)
+El valor F es la relación entre la variación entre las marcas y la variación dentro de cada marca.
+
+Un valor F menor a 1 (como el tuyo) refuerza que hay más variedad de precios dentro de una misma marca (por ejemplo, entre un Honda barato y uno caro) que entre los promedios de las marcas comparadas.
+
+honda-jaguar
+2. El Valor F (400.93)
+Un valor F tan alto es impresionante. Significa que la diferencia de precios entre las dos marcas es 400 veces mayor que la variación de precios que hay dentro de cada marca.
+
+3. Conexión con tu Heatmap
+Si mirás el mapa de calor que hiciste antes, esto tiene todo el sentido:
+
+Honda suele estar en el bloque de tracción delantera (FWD) con colores rojos/naranjas (precios bajos).
+
+Jaguar suele estar en el bloque de tracción trasera (RWD) o integral, con colores azules oscuros (precios altos).

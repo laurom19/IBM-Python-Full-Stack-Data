@@ -1,0 +1,6 @@
+ENUNCIADO 14
+En la tabla T_CURSOS del fichero BD CURSOS, en la tabla MEDIDAS crear las siguientes medidas:
+TOTAL CURSOS: contar las filas de la tabla T_CURSOS
+NUMERO CURSOS: contar el número de elemento diferentes del campo CURSOS.
+MEDIA TOTAL CLIENTE POR NUM CURSOS: dividir TOTAL CLIENTE entre NUMERO CURSOS con la función DIVIDE y en caso de dar cero que muestre el valor blanco o nulo.
+Agregar las medidas a la tabla del cliente que hemos insertado.

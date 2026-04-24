@@ -1,0 +1,14 @@
+Ejercicio 009
+Importar las tablas: T_ESPAÑA, T_FRANCIA Y T_ITALIA del fichero BD CURSO POR PAISES e ir directamente a Power Query.
+1. Anexar las 3 tablas a una con el nombre TOTAL CURSOS PAISES
+2. En la tabla TOTAL CURSOS PAISES, crear las siguientes columnas personalizadas:
+a. GASTO: IMPORTE PROFESOR + IMPORTE COMERCIAL. Asignar tipo de dato número decimal fijo
+b. BENEFICIO: IMPORTE CLIENTE – GASTO. Asignar tipo de dato número decimal fijo.
+c. REF CURSO: JUNTAR COLUMNAS: CURSO // DURACION // CLIENTE, ejemplo: EXCEL // 20 // CLIENTE-002. Asignar tipo de dato texto
+3. Crear una columna condicional con el nombre: DIAS PLAZO PAGO y las siguientes condiciones:
+a. Si JORNADA CURSO es MAÑANA, DIAS PLAZO PAGO es 45
+b. SI JORNADA CURSO es TARDE, DIAS PLAZO PAGO es 60
+c. En cualquier otro caso DIAS PLAZO PAGO es 90
+4. Asignar un tipo de dato número entero a la columna DIAS PLAZO PAGO.
+5. Crear una nueva columna personalizado con el nombre: FECHA PAGO, cuyo valor será: FECHA CURSO + DIAS PLAZO PAGO. Darle un tipo de dato FECHA.
+6. Cargar en Power BI sólo la tabla: TOTAL CURSOS PAISES

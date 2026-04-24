@@ -1,0 +1,10 @@
+EJERCICIO 1, 
+
+Pregunta 1: ¿Cuántas relaciones contiene el esquema de la Concesionaria de coches?
+TIENE 3 RELACIONES, ES DECIR QUE TIENE 3 TABLAS, LA TABLA COCHE(CAR), VENTA(SALE), VENDEDOR(SALEPERSON)
+
+Pregunta 2: ¿Cuántas columnas contiene la relación Coche?
+4, CONTIENE LA NUMERO SERIE, MODELO, MANUFACTURA, PRECIO
+
+Pregunta 3: ¿Cuál es el grado de la relación Vendedor?
+EL GRADO DEL VENDEDOR ES 3, YA QUE CONTIENE 3 ATRIBUTOS/COLUMNAS

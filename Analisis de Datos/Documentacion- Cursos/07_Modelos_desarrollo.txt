@@ -1,0 +1,16 @@
+1. El Coeficiente (0.862): Una Relación Muy Fuerte
+Como el valor está muy cerca de 1, significa que existe una Correlación Positiva Fuerte.
+
+En la práctica: Esto indica que cuando una de tus variables sube (por ejemplo, el tamaño del motor), la otra (el precio) también tiende a subir de forma muy predecible.
+
+Precisión: Un valor por encima de 0.8 es considerado "muy fuerte" en la industria automotriz y en ciencias sociales.
+
+2. El Valor P (0.0000...): Certeza Total
+Ese "choclo" de ceros es la mejor noticia. Significa que la probabilidad de que esta relación sea un error o una coincidencia es prácticamente cero.
+
+Significancia: Al ser mucho menor que 0.001, podés decir que el resultado es altamente significativo.
+
+En IT: Es como cuando corrés un test de base de datos y pasa el 100% de las pruebas; tenés total confianza en que la variable que elegiste es un excelente predictor.
+
+
+"There is a strong positive correlation between engine size and price ($r = 0.87$). Since the p-value is much lower than 0.001, the correlation is statistically significant, indicating a reliable linear relationship."
