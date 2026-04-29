@@ -28,7 +28,7 @@ print (total)
 total_seleciono= total.head(20)
 print (total_seleciono)
 
-#GRADICO
+#GRAFICO
 
 total_seleciono.plot(kind="bar", figsize = (8,6), fontsize = 10)
 plt.xlabel("Columnas", fontsize = 20)

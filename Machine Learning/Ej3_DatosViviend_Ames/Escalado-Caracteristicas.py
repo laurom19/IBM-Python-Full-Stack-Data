@@ -37,4 +37,8 @@ escalado_datos = StandardScaler().fit_transform(casas_atrib_num)
 print ("El ajuste y transformacion de los datos es:",escalado_datos)
 
 
+#Ejercicio: usa las funciones standardScaler() y fit_transform()  en la columna 'SalePrice' (Recordar de pasar a array)
+escalado_datos_precio_venta = StandardScaler().fit_transform(casas["SalePrice"].to_numpy().reshape(-1, 1))
+print ("El ajuste y transformacion de los datos de la columna precio de venta de las casas es:",escalado_datos_precio_venta)
+
 #Es fundamental aplicarlo después de haber tratado los valores nulos (fillna), porque la función min() o max() no puede procesar un NaN
