@@ -13,4 +13,4 @@ Significancia: Al ser mucho menor que 0.001, podés decir que el resultado es al
 En IT: Es como cuando corrés un test de base de datos y pasa el 100% de las pruebas; tenés total confianza en que la variable que elegiste es un excelente predictor.
 
 
-"There is a strong positive correlation between engine size and price ($r = 0.87$). Since the p-value is much lower than 0.001, the correlation is statistically significant, indicating a reliable linear relationship."
+"There is a strong positive correlation between engine size and price (r = 0.87). Since the p-value is much lower than 0.001, the correlation is statistically significant, indicating a reliable linear relationship."
