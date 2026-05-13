@@ -1,0 +1,15 @@
+# Datos de MinIO (Persistencia de objetos)
+minio_data/
+
+# Archivos de sistema y temporales de Docker/Airflow
+sys/
+.env
+.DS_Store
+
+# Logs y carpetas de descarga de Spark
+logs/
+.ivy2/
+__pycache__/
+
+# Base de datos local de Airflow (si existiera)
+airflow.db
